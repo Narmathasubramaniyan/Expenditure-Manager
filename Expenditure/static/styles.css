@@ -1,0 +1,104 @@
+body {
+    background-image: linear-gradient(120deg, #84fab0 0%, #8fd3f4 100%);
+    font-family: Arial, sans-serif; /* Set a default font family */
+}
+
+.expenditure {
+    display: flex;
+    justify-content: center; /* Center the flex items horizontally */
+    align-items: flex-start; /* Align items to the top */
+    gap: 20px; /* Add some space between the flex items */
+    margin-top: 50px; /* Add margin to move the card down */
+}
+
+.transaction-input {
+    font-size: large;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    transition: 0.3s;
+    height: 70vh;
+    width: 25%;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column; /* Align content vertically */
+    justify-content: center; /* Center content vertically */
+    align-items: center; /* Center content horizontally */
+    background-image: linear-gradient(to top, #a8edea 0%, #fed6e3 100%);
+    padding: 20px; /* Add padding inside the card */
+}
+
+.transaction-input label,
+.transaction-input input,
+.transaction-input select {
+    width: 100%; /* Make form elements full width */
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 1px solid #ccc; /* Add border to form elements */
+    border-radius: 5px; /* Rounded corners for form elements */
+}
+
+.transaction-input input[type="submit"] {
+    width: 50%; /* Adjust width as needed */
+    max-width: 150px; /* Set maximum width for the button */
+    margin: 0 auto; /* Center the button horizontally */
+    background-color: #08d854; /* Add a background color */
+    border: none; /* Remove default border */
+    color: white; /* White text color */
+    cursor: pointer; /* Change cursor on hover */
+    transition: background-color 0.3s; /* Smooth background color change */
+}
+
+.transaction-input input[type="submit"]:hover {
+    background-color: #4fb8ec; /* Change background color on hover */
+}
+
+.transaction-history {
+    font-size: large;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    transition: 0.3s;
+    height: 70vh;
+    width: 50%;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column; /* Align content vertically */
+    justify-content: flex-start; /* Align content to the top */
+    align-items: center; /* Center content horizontally */
+    background-image: linear-gradient(to top, #a8edea 0%, #fed6e3 100%);
+    padding: 20px; /* Add padding inside the card */
+    overflow-y: auto; /* Add vertical scroll if content overflows */
+}
+
+.transaction-history table {
+    width: 100%; /* Make table fill the container width */
+    border-collapse: collapse; /* Collapse table borders */
+    margin-bottom: 20px; /* Add space below the table */
+}
+
+.transaction-history th, .transaction-history td {
+    border: 1px solid #ddd; /* Add borders to table cells */
+    padding: 8px; /* Add padding to table cells */
+    text-align: left; /* Align text to the left */
+}
+
+.transaction-history th {
+    background-color: #f2f2f2; /* Light gray background for table headers */
+}
+
+.transaction-history h2 {
+    margin-top: 10px; /* Move the heading up */
+    margin-bottom: 20px; /* Add some space below the heading */
+    font-size: 24px; /* Increase font size */
+    text-align: center; /* Center the heading */
+}
+
+.totals {
+    width: 100%; /* Make totals section full width */
+    display: flex; /* Use flexbox for layout */
+    justify-content: space-between; /* Space out the totals */
+    padding: 10px 0; /* Add padding to the totals section */
+    border-top: 1px solid #ddd; /* Add a top border */
+}
+
+.totals p {
+    margin: 0; /* Remove default margin */
+    font-size: 18px; /* Adjust font size */
+}
